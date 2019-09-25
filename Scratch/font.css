@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Muli', sans-serif;
+*/
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #3D4449;
+    font-size: 1.5em;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #3D4449;
+    font-size: 1.3em; 
+    font-weight: 400;
+    text-align: left;
+}
+
+a{
+    color: #3D4449;
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+
+a:hover {
+    color: #f66a6a;
+  }
+
+P {
+    font-family: 'Roboto', sans-serif;
+    color: #3D4449;
+}
+
+button, footer {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+label{ 
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    color: #3D4449;
+}
+
+
+input {
+
+    font-family: 'Muli', sans-serif;
+    color: #3D4449;
+
+}
+
+
