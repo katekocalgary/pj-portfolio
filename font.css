@@ -30,8 +30,6 @@ a{
     color: #3D4449;
     text-decoration: none;
     font-family: "Roboto Slab", serif;
-    vertical-align: middle;
-    text-align: center;
   }
 
 
@@ -39,9 +37,10 @@ a:hover {
     color: #f66a6a;
   }
 
-P {
+P, li, figcaption {
     font-family: 'Roboto', sans-serif;
     color: #3D4449;
+    font-size: 0.9em;
 }
 
 button, footer {

@@ -51,7 +51,7 @@ nav a:hover {
 }
 
 
-.main {
+main {
   grid-column: 1/-1;
   grid-row: mn-st/hd-end;
 }
@@ -93,13 +93,43 @@ main > section {
   padding-bottom: 2em;
 }
 
-.section2 img{
-  padding-top: 10px;
-  width: 15vw;
-  height: 20vw;
-  border-radius: 0.5em;
+
+.card {
+  border-radius: 2px;
+  margin: 1rem;
+  position: relative;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  
 }
 
+.card img {
+  width: 15vw;
+  height: 20vh;
+  height: auto;
+  display: block;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card figcaption {
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  padding: 0.9em;
+
+}
+
+
+.card:hover img {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+/* how qualified */
 .section2{
   display: flex;
   flex-direction: row;
@@ -110,9 +140,8 @@ main > section {
 
 
 .down {
+  color: #3c414d;
   margin-top: 20px;
-  color: #f66a6a;
-  font-family: "Roboto Slab", serif;
   text-align: center;
   display: block;
 }
@@ -131,7 +160,8 @@ main > section {
 }
 
 .more:hover{
-  background-color: rgba(245, 106, 106, 0.05);
+  background-color: white;
+  border-color: #f66a6a;
 }
 
 section a{
@@ -146,9 +176,15 @@ hr.hr1{
 }
 
 .section3 img{
-  padding-top: 10px;
-  width: 20vw;
+  width: 15vw;
   height: 10vw;
+  border-radius: 5px;
+
+}
+
+.section3 figure:hover img{
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .section3{
@@ -157,7 +193,6 @@ hr.hr1{
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background-color:#f5f6f7;
 }
 
 .section4{
@@ -182,13 +217,12 @@ hr.hr1{
   content: url(img/left-quote.png);
  
 }
-.quote:after{
-  content: url(img/right-quote.png);
-}
+
 
 .social{
   padding-right: 20px;
   padding-bottom: 20px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -207,21 +241,116 @@ footer h6 {
   font-weight: normal;
 }
 
+/* joyful page style */
 
-.gallerywrap img{
-  padding-top: 10px;
-  padding-right: 10px;
-  width: 15vw;
-  height: 15vw;
-  border-radius: 0.5em;
+
+.gallerywrap {
+  margin: 70px 50px 100px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 
+.gallerywrap img{
+  width: 20vw;
+  height: 20vw;
+  display: block;
+  box-shadow: -1px 0px 0px rgba(0,0,0,0.03);
+  border-radius: 4px;
+} 
+
+.gallerywrap figure:hover img{
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.galcard {
+  position: relative;
+}
+.galcard figcaption {
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  padding: 0.9em;
+  display: block;
+
+}
 
 
-/* for cross browsing & responsive  */
+/* connected page style */
 
-@media only screen and (max-width: 600px) { 
+
+/* form style */
+
+.contact{
+  margin: auto;
+}
+
+.form {
+  width: 400px;
+  margin: auto;
+  position: relative;
+  border: 1px solid lightsalmon;
+  border-radius: 0.375em;
+  background-color: white;
+  }
+
+
+.label {
+  padding: 0.5em;
+}
+
+.input {
+  padding-left: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid lightslategray;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: 0;
+  border: 1px solid lightsalmon;
+}
+
+/* button style */
+
+.button{
+  padding-top: 20px;
+}
+
+
+button.submit{
+  width: 100%;
+  height: 3em;
+  background-color: #e7746f;
+  border: 1px solid #e7746f;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover{
+  border: 1px solid #5d4954;
+  transition-property: box-shadow;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
+  transition : 0.3s ease; 
+}
+
+
+@media only screen and (max-width: 800px) { 
   .quote {
     font-size: 1.3em;
   }
@@ -229,11 +358,12 @@ footer h6 {
     width: 70vw;
   } 
 
-  .section2 img{
+  .card img{
     width: 60vw;
     height: 80vw;
     border-radius: 0.5em;
   }
+
 
   .section3 img{
     width: 64vw;
@@ -241,8 +371,16 @@ footer h6 {
   }
 
   .gallerywrap img{
-    padding-top: 70px;
-    padding-right: 70px;
+    width: 70vw;
+    height: 70vw;
   }
-  
+
+  .gallerywrap {
+    margin: 30px 10px 50px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
 }

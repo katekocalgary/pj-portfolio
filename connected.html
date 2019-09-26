@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Kate Portfolio - Joyful</title>
+  <title>Kate Portfolio - Connected</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,29 +13,45 @@
       <h1><a href="index.html">Kate</a></h1>
       <nav>
         <ul>
-          <li><a href="#">Qualified</a></li>
-          <li><a href="#">Joyful</a></li>
-          <li><a href="#">Conneted</a></li>
+            <li><a href="qualified.html">Qualified</a></li>
+            <li><a href="joyful.html">Joyful</a></li>
+            <li><a href="connected.html">Conneted</a></li>
         </ul>
       </nav>
     </header>  
-    <main>
-      <section class="gallery">
-        <div class="title"><h1>What a joyful</h1></div>
-        <div class="gallerywrap">
-            <img src="https://picsum.photos/300/300" alt="">
-            <img src="https://picsum.photos/300/300" alt="">
-            <img src="https://picsum.photos/300/300" alt="">
-            <img src="https://picsum.photos/300/300" alt="">
-            <img src="https://picsum.photos/300/300" alt="">
-            <img src="https://picsum.photos/300/300" alt="">
-            <img src="https://picsum.photos/300/300" alt="">
-            <img src="https://picsum.photos/300/300" alt="">
-            <img src="https://picsum.photos/300/300" alt="">
-            <img src="https://picsum.photos/300/300" alt="">
-            <img src="https://picsum.photos/300/300" alt="">
-            <img src="https://picsum.photos/300/300" alt="">
+    <main >
+    <div class="form">
+        <h1>Contact me</h1>
+        <!-- form start -->
+        <form class="connected" action="#" method="post">
+        <div class="container">
+            <div class="required">
+                <label for="email">E-mail</label>
+            </div>
+            <div class="input">
+                <input id="email" type="email" name="email" placeholder="E-mail" maxlength="50" required>
+            </div>
+            <div class="required">
+                <label for="name">Name</label>
+            </div>
+            <div class="input">                
+                <input id="name" type="text" name="name" placeholder="Name (4 to 20 characters)" required minlength="4" maxlength="20">
+            </div>
+            <div class="content">
+                <label for="content">Content</label>
+            </div>
+            <div class="input">
+                <input id="content" type="textarea" name="content"  placeholder="Anything you ask Kate">  
+            </div>
         </div>
+        <!-- button  -->
+        <div class="button">
+            <button type="submit" id="submit" class="submit" value="submit"> Send</button> 
+        </div>
+        </form>
+        <!-- form end -->
+    </div>
+    <!-- signup box end -->
       </section>
       <footer>
           <h6>&copy; 2019 KATE KO. All rights reserved.</h6>
