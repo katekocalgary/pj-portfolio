@@ -14,7 +14,7 @@
 header{
   padding: 5em 0;
  
-  background-image: url('https://picsum.photos/2000/2000');
+  background-image: url('img/hero.jpg');
   background-repeat: no-repeat;
   background-position: contain;
   color: darkgray;
@@ -241,6 +241,59 @@ footer h6 {
   font-weight: normal;
 }
 
+/* qualified page */
+
+.profile h1{
+  margin-top: 55px;
+}
+img.cpic{
+  position: relative;
+}
+.callout {
+  width: 140px;
+  height: 100px;
+  position: absolute;
+  right: 20%;
+  top: 250px;
+  color: #f66a6a;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: white;
+	border-radius: 3px;
+	box-shadow: 0px 0px 20px #999;
+	margin: 25px;
+	min-height: 50px;
+	border: 1px solid lightgray;
+	text-shadow:c 0 0 1px #000;
+}
+
+.callout img{
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  height: 120px;
+  width: 120px;
+  display: block;
+  padding-left: 50px;
+}
+.callout::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+.callout::before {
+  content: "";
+	right: 7px;
+	bottom: -20px;
+	border-top: 10px solid white;
+}
+
+
+
 /* joyful page style */
 
 
@@ -261,11 +314,6 @@ footer h6 {
   border-radius: 4px;
 } 
 
-.gallerywrap figure:hover img{
-  -webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
-
 .galcard {
   position: relative;
 }
@@ -282,23 +330,33 @@ footer h6 {
 
 }
 
+.gallerywrap figure:hover img{
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.gallerywrap figure:hover figcaption{
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
 
 /* connected page style */
 
 
-/* form style */
+/* form */
 
 .contact{
   margin: auto;
 }
 
 .form {
-  width: 400px;
-  margin: auto;
+  width: 50vw;
+  margin: 150px auto 100px auto;
   position: relative;
   border: 1px solid lightsalmon;
   border-radius: 0.375em;
   background-color: white;
+  text-align: center;
   }
 
 
@@ -308,16 +366,31 @@ footer h6 {
 
 .input {
   padding-left: 5px;
+  height: 3em;
 }
 
 input {
-  width: 100%;
+  width: 25vw;
+  height: 1em;
   padding: 5px;
   border: 1px solid lightslategray;
   border-radius: 4px;
 }
 
 input:focus {
+  outline: 0;
+  border: 1px solid lightsalmon;
+}
+
+textarea {
+  width: 25vw;
+  height: 60px;;
+  padding: 5px;
+  border: 1px solid lightslategray;
+  border-radius: 4px;
+}
+
+textarea:focus {
   outline: 0;
   border: 1px solid lightsalmon;
 }
@@ -330,7 +403,9 @@ input:focus {
 
 
 button.submit{
-  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 300px;
   height: 3em;
   background-color: #e7746f;
   border: 1px solid #e7746f;
@@ -370,6 +445,9 @@ button:hover{
     height: 35vw;
   }
 
+  .callout {
+    display: none;
+  }
   .gallerywrap img{
     width: 70vw;
     height: 70vw;
@@ -383,4 +461,12 @@ button:hover{
     flex-wrap: wrap;
   }
 
-}
+  .form {
+    width: 80vw;
+  }
+
+  input,textarea {
+      width: 70vw;
+  }
+    
+} 
