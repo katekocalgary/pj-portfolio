@@ -43,6 +43,21 @@ P, li, figcaption {
     font-size: 0.9em;
 }
 
+.menu {
+        color: white;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        font-weight: 600;
+}
+
+.menu a {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+}
+
+
 button, footer {
     font-family: 'Poppins', sans-serif;
     
