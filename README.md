@@ -1,2 +1,2 @@
-# pj-portfolio
-project for tony's class
+# Kate Ko's Portfolio
+- Symple and Easy portfolio as Kate
