@@ -5,23 +5,21 @@
 Home
 * * * * * * * * * * * * * * * * * * */
 
-/* header start  */
+/* Grid Wrap  */
 .grid1{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: [pg-st] 30vh [mn-st] 5vh [hd-end] auto [mn-end];
-  grid-gap: 1em;
+  grid-template-rows: [pg-st] 50vh [mn-st] 30vh [hd-end] auto [mn-end] ;
 }
 
+
+/************** Header Start  **************/
 header{
-  padding: 5em 0;
- 
   background-image: url('img/hero.jpg');
   background-repeat: no-repeat;
-  background-position: contain;
   color: darkgray;
   text-align: center;
- 
+  
 
   grid-column: 1/-1;
   grid-row: pg-st / hd-end;
@@ -31,7 +29,16 @@ header{
   justify-content: center;
 }
 
+.logo {
+  font-family:'Mansalva', cursive;
+  color: #3D4449;
+  font-size: 2.3em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
 nav ul{
+  margin-left:0;
   padding-left: 0;
   list-style-type: none;
 
@@ -40,7 +47,7 @@ nav ul{
 }
 
 nav a{
-  padding: 2em;
+  padding: 1em;
   color: darkgray;
   text-decoration: none;
 }
@@ -49,18 +56,17 @@ nav a:hover {
   color: #f66a6a;
 }
 
-/* header end  */
+/************** Header End  **************/
 
 
-/* main start  */
+/************** Main Start  **************/
 
 main {
   grid-column: 1/-1;
   grid-row: mn-st/hd-end;
 }
 
-main > section {
-  padding: 2em 10vw;
+section {
   margin: auto;
   text-align: center;
 
@@ -69,15 +75,16 @@ main > section {
   justify-content: center;
 } 
 
+/* Section 1 - Profile. Blog Style Overlap */
 .section1{
   width: 50vw;
   background-color: white;
   border: 1px solid lightgray;
-  box-shadow: 1px;
 }
 
 .profile {
   text-align: left;
+  padding: 30px
 
 }
 #mepic {
@@ -89,18 +96,27 @@ main > section {
   shape-outside: circle(50%);
 }
 
+/* Section 2 - Joyful. Card Style */
+.section2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
 .title{
   text-align: center;
-  padding-bottom: 2em;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 
 .card {
   border-radius: 2px;
-  margin: 1rem;
+  margin-bottom: 50px;
   position: relative;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-  
 }
 
 .card img {
@@ -108,8 +124,9 @@ main > section {
   height: 20vh;
   height: auto;
   display: block;
-  border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
 }
 
 .card figcaption {
@@ -120,8 +137,9 @@ main > section {
   color: black;
   background-color: rgba(255, 255, 255, 0.4);
   text-align: center;
-  font-weight: 550;
   padding: 0.9em;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 
 }
 
@@ -130,25 +148,18 @@ main > section {
 }
 
 
-.section2{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-
 .down {
   color: #3c414d;
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
   display: block;
+  position: relative;
 }
 
 .more {
   margin: auto;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   color: #3c414d;
   font-family: "Roboto Slab", serif;
   text-align: center;
@@ -156,6 +167,7 @@ main > section {
   padding: 0.5em;
   width: 120px;
   display: block;
+  
 
 }
 
@@ -171,17 +183,24 @@ section a{
   display: block;
 }
 
-hr.hr1{
-	border-top: 2px solid #8c8b8b;
+hr{
+  border-top: 2px solid #8c8b8b;
+}
+
+/* Section 3 - Qualified. Logo Card Style */
+
+.section3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .section3 figure{
-  background-color: white;
   width: 15vw;
   height: 10vw;
-  border-radius: 5px;
   border: 1px solid lightgray;
-
 }
 
 .section3 img{
@@ -195,13 +214,9 @@ hr.hr1{
 	transform: scale(1.1);
 }
 
-.section3{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
+
+
+/* Section 3 - Quataion */
 
 .section4{
   position: relative;
@@ -214,7 +229,6 @@ hr.hr1{
   left:25%;
   right:25%;
   top: 10%;
-  padding: 30px 0 100px 0;
   font-size: 2em;
   font-weight: 600;
 }
@@ -224,20 +238,21 @@ hr.hr1{
  
 }
 
-/* main end  */
+/************** Main End  **************/
 
 
-/* Social medida & public footer  */
+/* Social Media */
 
 .social{
   padding-bottom: 20px;
-  margin-top: 50px;
+  margin-top: 70px;
   text-align: center;
 }
 .social img{
   padding-right: 30px;
 }
 
+/* Footer */
 footer {
   height: 15vh;
   background-color: #3c414d;
@@ -257,68 +272,87 @@ footer h6 {
 
 
 /* * * * * * * * * * * * * * * * * * *
-qualified page
+Qualified Page
 * * * * * * * * * * * * * * * * * * */
 
-.profile h1{
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: [pg-st] 30vh [mn-st] 5vh [hd-end] auto [mn-end];
+}
+
+.qualified h1{
   margin-top: 55px;
 }
-img.cpic{
-  position: relative;
+
+.qualified {
+  text-align: left;
+  padding: 30px;
 }
+
+
+.face {
+  width: 92px;
+  height: 130px;
+  position: absolute;
+  left: 80px;
+  z-index: 1;
+}
+
 .callout {
   width: 140px;
-  height: 100px;
+  height: 70px;
   position: absolute;
-  right: 20%;
-  top: 250px;
+  left: 100px;
+  bottom:20px;
   color: #f66a6a;
   font-family: "Roboto Slab", serif;
-  font-weight: 600;
   font-size: 1.2em;
   padding: 10px;
   background-color: white;
-	border-radius: 3px;
-	box-shadow: 0px 0px 20px #999;
+	border-radius: 10px;
 	margin: 25px;
 	min-height: 50px;
-	border: 1px solid lightgray;
-	text-shadow:c 0 0 1px #000;
+  border: 1px solid lightgray;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
 }
 
-.callout img{
-  position: absolute;
-  right: 10px;
-  top: 8px;
-  height: 120px;
-  width: 120px;
-  display: block;
-  padding-left: 50px;
-}
-.callout::before {
+
+.callout:before {
 	content: "";
-	width: 0px;
-	height: 0px;
-	border: 0.8em solid transparent;
 	position: absolute;
+	width: 0;
+	height: 0;
+	left: 23px;
+	bottom: -42px;
+  border: 10px solid transparent;
+  border-top: 32px solid rgb(193,193,193); /* IE8 Fallback */
+  border-top: 32px solid rgba(193,193,193,0.5);
+  z-index: 2;
 }
-.callout::before {
+.callout:after {
   content: "";
-	right: 7px;
-	bottom: -20px;
-	border-top: 10px solid white;
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 25px;
+	bottom: -31px;
+  border: 8px solid transparent;
+  border-top: 24px solid #fff;
+  z-index: 3;
 }
+
 
 
 
 
 /* * * * * * * * * * * * * * * * * * *
-joyful page 
+Joyful Page 
 * * * * * * * * * * * * * * * * * * */
 
 
 .gallerywrap {
-  margin: 70px 50px 100px 50px;
+  margin: 100px 50px 70px 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -334,21 +368,6 @@ joyful page
   border-radius: 4px;
 } 
 
-.galcard {
-  position: relative;
-}
-.galcard figcaption {
-  position: absolute;
-  bottom:0;
-  left: 0;
-  right: 0;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.4);
-  text-align: center;
-  padding: 0.9em;
-  display: block;
-
-}
 
 .gallerywrap figure:hover img{
   -webkit-transform: scale(1.1);
@@ -363,10 +382,10 @@ joyful page
 
 
 /* * * * * * * * * * * * * * * * * * *
-connected page style
+Connected Page 
 * * * * * * * * * * * * * * * * * * */
 
-/* form */
+/* Form */
 
 .contact{
   margin: auto;
@@ -374,7 +393,7 @@ connected page style
 
 .form {
   width: 50vw;
-  margin: 150px auto 100px auto;
+  margin: 100px auto 50px auto;
   position: relative;
   border: 1px solid lightsalmon;
   border-radius: 0.375em;
@@ -418,7 +437,7 @@ textarea:focus {
   border: 1px solid lightsalmon;
 }
 
-/* button style */
+/* Button style */
 
 .button{
   padding-top: 20px;
@@ -448,12 +467,22 @@ button:hover{
 }
 
 
+/* * * * * * * * * * * * * * * * * * *
+Responsive
+* * * * * * * * * * * * * * * * * * */
+
 @media only screen and (max-width: 800px) { 
+
+  /* Home */
+  .grid1{
+    grid-template-rows: [pg-st] 30vh [mn-st] 5vh [hd-end] auto [mn-end];
+  }
+
   .quote {
     font-size: 1.3em;
   }
   .section1{
-    width: 70vw;
+    width: 100vw;
   } 
 
   .card img{
@@ -462,34 +491,58 @@ button:hover{
     border-radius: 0.5em;
   }
 
+  .section3{
+    display: flex;
+    flex-direction: column;
 
-  .section3 img{
+  }
+
+  .section3 figure{
     width: 64vw;
-    height: 35vw;
+    height: 30vw;
+    padding: 20px;
+
+  }
+  .section3 img{
+    width: 44.8vw;
+    height: 24.5vw;
   }
 
-  .callout {
-    display: none;
-  }
   .gallerywrap img{
     width: 70vw;
     height: 70vw;
   }
 
   .gallerywrap {
-    margin: 30px 10px 50px 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin: 100px 0px 70px 0px;
   }
 
+
+ /* Connected Page */
+
   .form {
+    margin-top: 100px;
     width: 80vw;
   }
 
   input,textarea {
       width: 70vw;
   }
+
+  button.submit{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 3em;
+    background-color: #e7746f;
+    border: 1px solid #e7746f;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
     
-} 
+  } 
+}
+

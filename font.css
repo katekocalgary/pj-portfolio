@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
 
 /*
 font-family: 'Poppins', sans-serif;
@@ -18,12 +19,12 @@ h1 {
     font-size: 1.5em;
 }
 
+
 h2 {
     font-family: 'Roboto', sans-serif;
     color: #3D4449;
     font-size: 1.3em; 
-    font-weight: 400;
-    text-align: left;
+    font-weight: 600;
 }
 
 a {

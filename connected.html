@@ -4,64 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Kate Portfolio - Connected</title>
+  <title>Kate Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="grid1">
+  <!-- Grid Wrap Start-->
+  <div class="grid2">
+    <!-- Header Start -->
     <header>
-      <h1><a href="index.html">Kate</a></h1>
+      <a href="index.html" class="logo">Kate</a>
       <nav>
         <ul>
-            <li><a href="qualified.html">Qualified</a></li>
-            <li><a href="joyful.html">Joyful</a></li>
-            <li><a href="connected.html">Conneted</a></li>
+            <li class="menu"><a href="qualified.html">Qualified</a></li>
+            <li class="menu"><a href="joyful.html">Joyful</a></li>
+            <li class="menu"><a href="connected.html">Connected</a></li>
         </ul>
       </nav>
-    </header>  
-    <main >
-    <div class="form">
-        <h1>Contact me</h1>
-        <!-- form start -->
-        <form class="connected" action="#" method="post">
-        <div class="container">
-            <div class="required">
+    </header>   
+    <!-- Header End-->
+
+    <!-- Main Start -->
+    <main>
+      <div class="form">
+          <h1>Contact me</h1>
+          <!-- Form Start -->
+          <form class="connected" action="#" method="post">
+            <div class="container">
+              <div class="required">
                 <label for="email">E-mail</label>
-            </div>
-            <div class="input">
+              </div>
+              <div class="input">
                 <input id="email" type="email" name="email" placeholder="E-mail" maxlength="50" required>
-            </div>
-            <div class="required">
+              </div>
+              <div class="required">
                 <label for="name">Name</label>
-            </div>
-            <div class="input">                
+              </div>
+              <div class="input">                
                 <input id="name" type="text" name="name" placeholder="Name" required minlength="4" maxlength="20">
+              </div>
+              <div class="content">
+                <label for="ask">Message</label>
+              </div>
+              <div class="input">
+                <textarea id="ask" name="ask" rows="5" cols="20"> </textarea> 
+              </div>
             </div>
-            <div class="content">
-                <label for="content">Content</label>
-            </div>
-            <div class="input">
-                <textarea id="ask" name="ask"  placeholder="Anything you ask Kate" row="5" cols="20"> </textarea> 
-            </div>
-        </div>
-        <!-- button  -->
-        <div class="button">
-            <button type="submit" id="submit" class="submit" value="submit"> Send</button> 
-        </div>
-      </form>
-    </div>
-    <div class="social">
-      <a href="#" class=""><img src="img/linkedin.png" alt="Linked in"></a>
-      <a href="#" class=""><img src="img/instagram.png" alt="instagram"></a>
-      <a href="#" class=""><img src="img/email.png" alt="instagram"></a>
-    </div>
+          <!-- Button  -->
+          <div class="button">
+              <button type="submit" id="submit" class="submit" value="submit"> Send</button> 
+          </div>
+        </form>
+        <!-- Form End -->
+      </div>
+      <!-- Socail Media -->
+      <div class="social">
+        <a href="https://www.linkedin.com/in/kate-ko-007438185/" target="_blank"><img src="img/linkedin.png" alt="Linked in"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+        <a href="mailto:katekocalgary@gmail.com" title="mailto"><img src="img/email.png" alt="instagram"></a>
+      </div>
+      <!-- Footer -->
       <footer>
           <h6>&copy; 2019 KATE KO. All rights reserved.</h6>
       </footer> 
     </main>
   </div>
-
-
-
 </body>
 </html>
